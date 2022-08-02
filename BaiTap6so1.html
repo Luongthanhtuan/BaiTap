@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#khung {
+			width: 80%;
+			height: 650px;
+			/*background: blue;*/
+		}
+		#trai {
+			width: 20%;
+			height: 100%;
+			background: black;
+			float: left;
+		}
+		#giua {
+			width: 4%;
+			height: 100%;
+			/*background: gray;*/
+			float: left;
+		}
+		#phai {
+			width: 76%;
+			height: 100%;
+			/*background: yellow;*/
+			float: left;
+		}
+		#phai > .trai {
+			width: 80%;
+			height: 100%;
+			/*background: green;*/
+			float: left;
+		}
+		#phai > .trai > .tren {
+			width: 100%;
+			height: 6%;
+			/*background: #00FF99;*/
+			float: left;
+		}
+		#phai > .trai > .duoi {
+			width: 100%;
+			height: 79.5%;
+			/*background:#6699FF;*/
+			float: left;
+		}
+		#phai > .trai > .duoi > .table {
+			width: 65%;
+			height: 77%;
+			background:#99FF99;
+			float: left;
+			position: absolute;
+			top:150px;
+			left:80px ;
+		}
+		#phai > .phai {
+			width: 20%;
+			height: 100%;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<div id="khung">
+		<div id="trai" style="position: relative;">
+			<img class="san_ho" src="https://raw.githubusercontent.com/Luongthanhtuan/BaiTap/main/sanho.gif" style="position: absolute; top: 20px;">
+		</div>
+		<div id="giua" >
+			<img class="dai_mau"src="https://raw.githubusercontent.com/Luongthanhtuan/BaiTap/main/soc.jpg" height="650px">
+		</div>
+		<div id="phai" style="position: relative;">
+			<img src="https://raw.githubusercontent.com/Luongthanhtuan/BaiTap/main/sua1.gif" style="position : absolute; left : 160px; top: 150px;;">
+			<div class="trai">
+				<font color="#FF9933">
+					<h1 style="margin-left: 30px; padding-top:15px">THAM GIA CLB</h1>
+				</font>
+			<div class="tren" style="margin-left:80px;">
+				Qúy độc giả hãy điền đầy đủ thông tin để tham gia phá triển Câu lạc bộ
+				<br>
+				ngày càng vững mạnh hơn
+				</font>
+			</div>
+
+			<div class="duoi">
+				<div class="table">
+					<form>
+						<table style="margin-left: 60px; padding-top:15px">
+							<tr>
+								<td>
+									Họ Và Tên :
+								</td>
+								<td>
+									<input type="text" size="40">*
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Địa Chỉ :
+								</td>
+								<td>
+									<input type="text" size="60">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Email :
+								</td>
+								<td>
+									<input type="email" size="40">*
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Điện Thoại :
+								</td>
+								<td >
+									<input type="number" size="20">*
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Ngày Sinh :
+								</td>
+								<td >
+									<input type="date">*
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Đề Tài :
+								</td>
+								<td >
+									<select>
+										<option>
+											Tìm hiểu Sứa biển
+										</option>
+										<option>
+											Khum Biết Nữa !!!
+										</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Nhóm :
+								</td>
+								<td >
+									<input type="radio" name="nhom">Nghiên cứu
+									<br>
+									<input type="radio" name="nhom">Hải ngư
+									<br>
+									<input type="radio" name="nhom">Viễn dương
+									<br>
+									<input type="radio" name="nhom">Mỹ thuật
+									<br>
+									<input type="radio" name="nhom">Thực phẩm
+									<br>
+									<input type="radio" name="nhom">Sinh viên
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Gởi Hình :
+								</td>
+								<td >
+									<input type="file">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Tài Liệu :
+								</td>
+								<td >
+									<input type="checkbox" >Sinh vật biển
+									<br>
+									<input type="checkbox" >Các loài sứa biển
+									<br>
+									<input type="checkbox" >San hô
+									<br>
+									<input type="checkbox" >Môi trường biển
+									<br>
+									<input type="checkbox" >Khí hậu
+								</td>
+							</tr>
+							<tr>
+								<td align="left" >
+									<button>
+										Tham gia
+									</button>
+								</td>
+								<td align="center">
+									<button type="reset">
+										Xóa thông tin
+									</button>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+			</div>
+			<div class="phai" style="position: relative;">
+				<img src="https://raw.githubusercontent.com/Luongthanhtuan/BaiTap/main/nhom1b.jpg
+				" style="position: absolute; top:52px;">
+				<img src="https://raw.githubusercontent.com/Luongthanhtuan/BaiTap/main/nhom1a.jpg
+				" style="position: absolute; top:182px;">
+				<img src="https://raw.githubusercontent.com/Luongthanhtuan/BaiTap/main/nhom1c.jpg
+				" style="position: absolute; top:312px;">
+				<img src="https://raw.githubusercontent.com/Luongthanhtuan/BaiTap/main/nhom1d.jpg
+				" style="position: absolute; top:452px;">
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>
