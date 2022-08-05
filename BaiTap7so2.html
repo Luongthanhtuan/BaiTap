@@ -16,6 +16,7 @@
 			height: 700px;
 			/*background: black;*/
 		}
+		/*ben_trai*/
 		#trai {
 			width: 31%;
 			height: 100%;
@@ -38,7 +39,38 @@
 			width: 100%;
 			height: 70%;
 			/*background: #00FF66;*/
-			float: left;	
+			float: left;
+		}
+		#trai > .tren > .thong_tin > .cau_cham_ngon {
+			width: 100%;
+			height: 30%;
+			/*background: red;*/
+			float: left;
+		}
+		#trai > .tren > .thong_tin > .dang_nhap {
+			width: 25%;
+			height: 40%;
+			/*background:#99FF99;*/
+			float: left;
+			position: absolute;
+			top:340px;
+			left:50px ;
+		}
+		#trai > .tren > .thong_tin > .dang_nhap > .bia {
+			width: 100%;
+			height: 26%;
+			/*background:#DCDCDC;*/
+			float: left;
+			position: absolute;
+			text-align: center;
+		}
+		#trai > .tren > .thong_tin > .dang_nhap > .nhap_thong_tin {
+			width: 100%;
+			height: 62%;
+			background:#DCDCDC;
+			float: left;
+			position: absolute;
+			top: 80px;
 		}
 		#trai > .duoi {
 			width: 100%;
@@ -46,22 +78,23 @@
 			/*background: #99CC66;*/
 			float: left;
 		}
+		/*ben_phai*/
 		#phai {
 			width: 69%;
 			height: 100%;
-			background: blue;
+			/*background: blue;*/
 			float: left;
 		}
 		#phai > .menu{
 			width: 100%;
-			height: 40%;
-			background: #CCCC66;
+			height: 5%;
+			/*background: white;*/
 			float: left;
 		}
 		#phai > .hinh_anh{
 			width: 100%;
-			height: 60%;
-			background: blue;
+			height: 95%;
+			/*background: blue;*/
 			float: left;
 		}
 
@@ -72,16 +105,55 @@
 			width: 100%;
 			height: 100%;
 		}
+		/*UL_LI_A*/
+		.menu ul {
+			width: 100%;
+			height: 100%;
+		}
+		.menu ul li {
+			width: 240px;
+			height: 100%;
+			display:inline-block;
+			background-color:purple;
+			text-align: center;
+			position: relative;
+			top: -16px;
+		}
+		.menu ul li a {
+			width: 100p%;
+			height: 100%;
+			text-decoration: none;
+			color: white;
+			line-height: 40px;
+		}
+		.menu li:hover ul {
+			display: block;
+		}
+		.menu ul li ul {
+			display: none;
+			position: absolute;
+			top: 51px;
+			left: -41px;
+		}
+		.menu ul li ul li{
+			width: 240px;
+			
+		}
+		.menu a:hover {
+			color: silver;
+			font-weight: bold;
+		}
 		
-
 
 
 		/*AnhCanChinhSua*/
 		.anh_nen {
 			position: absolute;
 			top: 7px;
-			left: 125px;
+			left: 140px;
 		}
+		/*Dien_thong_tin*/
+		.
 	</style>
 </head>
 <body>
@@ -90,30 +162,99 @@
 
 
 		<div id="trai">
-
-
-
-
 			<div class="tren">
 				<div class="anh_tuan">
 					<img class="anh_nen" src="https://raw.githubusercontent.com/Luongthanhtuan/BaiTap/main/Picsart_22-08-04_20-20-22-245.png" style="width: 190px;">
 				</div>
 				<div class="thong_tin">
-					<h1 style="margin-left: 90px; position: absolute; top: 180px; color: #999999;">Lương Thanh Tuấn</h1>
-					<br>
-					<h4 style="margin-left: 22px; position: absolute; top: 220px;color: #999966;">Đừng Từ Bỏ Hãy Ràng Buộc Bản Thân Để Sau Này Nhìn Lại</h4>
-					<br>
-					<h4 style="margin-left: 75px; position: absolute; top: 250px;color: #999966;">Thật Đúng Đắng Với Quyết Định Của Mình !!!</h4>
-					<br>
+					<div class="cau_cham_ngon">
+						<h1 style="margin-left: 90px; position: absolute; top: 180px; color: #999999;">Lương Thanh Tuấn</h1>
+						<br>
+						<h4 style="margin-left: 22px; position: absolute; top: 220px;color: #999966;">Đừng Từ Bỏ Hãy Ràng Buộc Bản Thân Để Sau Này Nhìn Lại</h4>
+						<br>
+						<h4 style="margin-left: 75px; position: absolute; top: 250px;color: #999966;">Thật Đúng Đắng Với Quyết Định Của Mình !!!</h4>
+					</div>
+					<div class="dang_nhap">
+						<div class="bia">
+							<font color="black"><b><h1>Đăng Ký</h1></b></font>
+						</div>
+						<div class="nhap_thong_tin">
+							<form>
+								<table style="padding-top:12px">
+									<tr>
+										<td>
+											<font color="black"><b>Họ Và Tên :</b></font> 
+										</td>
+										<td>
+											<input type="text" placeholder="vd:luonthanhtuan" size="30"> 
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<font color="black"><b>Giới Tính :</b></font> 
+										</td>
+										<td>
+											<input type="radio" name="gioi_tinh">Nam
+											<input type="radio" name="gioi_tinh">Nữ
+											<input type="radio" name="gioi_tinh">Đoán Đê
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<font color="black"><b>Có Bồ Chưa :</b></font> 
+										</td>
+										<td>
+											<input type="radio" name="khum_biet">Có
+											<input type="radio" name="khum_biet">Mẹ không cho yêu
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<font color="black"><b>Lươn Tuấn Đẹp Trai Không :</b></font> 
+										</td>
+										<td>
+											<input type="radio" name="huhu">Có
+											<input type="radio" name="huhu">Có Có
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<font color="black"><b>Yêu Thích :</b></font> 
+										</td>
+										<td>
+											<select>
+												<option>
+													Bắn Chim
+												</option>
+												<option>
+													Bơi Lội
+												</option>
+												<option>
+													Khóc Nhè
+												</option>
+												<option>
+													Thích Tuấn
+												</option>
+												<option>
+													Cái Đẹp 
+												</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td align="left">
+											<button>Đăng Nhập</button>
+										</td>
+										<td align="right">
+											<button type="reset">Ghi Lại HIHI</button>
+										</td>
+									</tr>
+								</table>
+							</form>
+						</div>
+					</div>			
 				</div>
 			</div>
-
-
-			
-
-
-
-
 			<!-- xong -->
 			<div class="duoi">
 				<font color="black">
@@ -137,13 +278,13 @@
 			<div class="menu">
 				<ul>
 					<li>
-						<a href="#">TRANG CHỦ</a>
+						<a href="#" style="padding-top: 600px;" >TRANG CHỦ</a>
 					</li>
 					<li>
-						<a href="#" >THÔNG TIN CÁ NHÂN</a>
+						<a href="#">THÔNG TIN CÁ NHÂN</a>
 					</li>
 					<li>
-						<a href="#" >ALBUM</a>
+						<a href="#">ALBUM⇓</a>
 						<ul>
 							<li>
 								<a href="#">CA NHẠC</a>
@@ -154,7 +295,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#">TÀI LIỆU</a>
+						<a href="#">TÀI LIỆU⇓</a>
 						<ul>
 							<li>
 								<a href="#">PHI VỤ TRIỆU ĐÔ</a>
