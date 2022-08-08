@@ -3,18 +3,124 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title>TÍNH TỔNG TIỀN CHO NHÂN VIÊN</title>
 	<style type="text/css">
 		#tong {
 			width: 100%;
-			height: 200px;
-			background: blue;
+			height: 700px;
+			background-image: url(https://raw.githubusercontent.com/Luongthanhtuan/BaiTap/main/bao.jpg);
+		}
+		.bia {
+			width: 35%;
+			height: 30%;
+			background: white;
+			position: relative;
+			left: 480px;
+			top: 210px;
+		}
+		.bia > .tieu_de {
+			width: 100%;
+			height: 25%;
+			background: white;
+			position: absolute;
+		}
+		.bia > .nhap_tien {
+			width: 100%;
+			height: 20%;
+			background: #CCCC99;
+			position: absolute;
+			top: 52px;
+		}
+		.bia > .thue {
+			width: 100%;
+			height: 20%;
+			background: #CCCC99;
+			position: absolute;
+			top: 94px;
+		}
+		.bia > .ket_qua {
+			width: 100%;
+			height: 36%;
+			background: #CCCC99;
+			position: absolute;
+			top: 136px;
+		}
+
+	
+		/*Chinh_sua*/
+		.tieu_de > h2 {
+			font-weight: bold;
+		}
+		.nhap_tien > h3{
+			font-weight: bold;
+		}
+		input[type="number"] {
+			width: 250px;
+			height: 24px;
+			font-weight: bold;
+			border: 1px solid white;
+			position: absolute;
+			left: 220px;
+			top: 10px;
+			border-radius: 4px;
+			text-align: center;
+		}
+		.thue button {
+			border-radius: 4px;
+			padding:5px ;
+			position: absolute;
+			top:10px;
+			left: 200px;
+			border: 1px solid white;
 		}
 	</style>
 </head>
 <body>
 	<div id="tong">
-		sgsg
+		<div class="bia">
+			<div class="tieu_de" align="center">
+				<h2>LƯƠNG NHÂN VIÊN</h2>
+			</div>
+			<div class="nhap_tien">
+				<h3 style="margin-left: 80px; margin-top: 12px;">Nhập Số Tiền :</h3>
+				<input type="number" id="tien" placeholder="Triệu VND">
+			</div>
+			<div class="thue" align="center">
+				<button type="button" onclick="caculate()" >
+					Tính thuế thu nhập
+				</button>
+			</div>
+			<div class="ket_qua" align="center">
+				<h3 style="margin-top: 2px;" id="ket_qua">Kết quả lương</h3>
+			</div>
+		</div>
 	</div>
+	<script type="text/javascript">
+		function caculate(){
+			let luongdau = document.getElementById('tien').value;
+			let thue = 0 ;
+			let luong = 0 ;
+			if (luongdau < 7) {
+				thue = luongdau * 0.1;
+				luong = luongdau - thue;
+			}
+			else if (lungdau > 7 && luongdau < 15 ) {
+				thue = luongdau * 0.2;
+				luong = luongdau - thue;
+			}
+			else if (lungdau >= 15) {
+				thue = luongdau * 0.3;
+				luong = luongdau - thue;
+			}
+			if (luongdau > 0) {
+				document.getElementById("ket_qua").innerHTML = `Lương ban đầu ${luongdau} triệu | Thuế ${thue} triệu | Luong ${luong} triệu`
+			}
+			else{
+				document.getElementById('ket_qua').innerHTML = `Nhập Lại`
+			}
+			
+		}
+
+	</script>
 </body>
 </html>
