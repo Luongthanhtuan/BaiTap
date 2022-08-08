@@ -98,29 +98,27 @@
 	<script type="text/javascript">
 		function caculate(){
 			let luongdau = document.getElementById('tien').value;
-			let thue = 0 ;
-			let luong = 0 ;
+			let thue = 0;
+			let luong = 0;
 			if (luongdau < 7) {
-				thue = luongdau * 0.1;
+				thue = luongdau * 10/ 100;
 				luong = luongdau - thue;
 			}
-			else if (lungdau > 7 && luongdau < 15 ) {
+			else if (luongdau > 7 && luongdau < 15) {
 				thue = luongdau * 0.2;
 				luong = luongdau - thue;
 			}
-			else if (lungdau >= 15) {
+			else if (luongdau >= 15) {
 				thue = luongdau * 0.3;
-				luong = luongdau - thue;
+				luong = luongdau - thue
 			}
 			if (luongdau > 0) {
-				document.getElementById("ket_qua").innerHTML = `Lương ban đầu ${luongdau} triệu | Thuế ${thue} triệu | Luong ${luong} triệu`
+				document.getElementById("ket_qua").innerHTML = `Lương ban đầu ${luongdau} triệu │ Thuế ${thue} triệu │ Lương ${luong} triệu`
 			}
 			else{
 				document.getElementById('ket_qua').innerHTML = `Nhập Lại`
-			}
-			
+			}		
 		}
-
 	</script>
 </body>
 </html>
